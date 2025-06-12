@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Windows XP Tahoma';
+  src: url('/public/assets/windows-xp-tahoma.otf/windows-xp-tahoma.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Tahoma', sans-serif;
+  background: #eeeeff;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Tahoma', monospace;
+}

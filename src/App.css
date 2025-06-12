@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Trebuchet+MS:wght@400;700&display=swap');
+
+body {
+  background: linear-gradient(135deg, #b2e0ff 0%, #e0e7ff 100%);
+  min-height: 100vh;
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  color: #222b3a;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.PortfolioApp {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.PortfolioHeader {
+  background: linear-gradient(90deg, #e0f7fa 0%, #b2e0ff 100%);
+  box-shadow: 0 4px 24px 0 rgba(0, 64, 128, 0.08);
+  border-bottom: 2px solid #aee3f7;
+  padding: 3rem 1rem 2rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.PortfolioHeader h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #1a237e;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 8px #b2e0ff;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #1976d2;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-links a {
+  color: #1976d2;
+  background: rgba(255,255,255,0.7);
+  border-radius: 50%;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px #b2e0ff;
+  transition: background 0.2s, transform 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.social-links a:hover {
+  background: #b2e0ff;
+  color: #0d47a1;
+  transform: scale(1.15) rotate(-6deg);
+}
+
+main {
+  flex: 1;
+  padding: 2rem 1rem 1rem 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+section {
+  background: rgba(255,255,255,0.85);
+  border-radius: 18px;
+  box-shadow: 0 2px 16px 0 rgba(0, 64, 128, 0.10);
+  margin-bottom: 2rem;
+  padding: 2rem 1.5rem;
+  transition: box-shadow 0.3s;
+}
+
+section:hover {
+  box-shadow: 0 6px 32px 0 rgba(0, 64, 128, 0.18);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #222b3a;
+}
+
+a {
+  color: #1976d2;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #0d47a1;
+}
+
+.PortfolioFooter {
+  background: linear-gradient(90deg, #b2e0ff 0%, #e0f7fa 100%);
+  border-top: 2px solid #aee3f7;
+  text-align: center;
+  padding: 1.2rem 0 1rem 0;
+  font-size: 1rem;
+  color: #1976d2;
+  box-shadow: 0 -2px 12px 0 rgba(0, 64, 128, 0.06);
+  margin-top: auto;
+}
+
+@media (max-width: 600px) {
+  .PortfolioHeader h1 {
+    font-size: 2rem;
+  }
+  main {
+    padding: 1rem 0.2rem;
+  }
+  section {
+    padding: 1.2rem 0.5rem;
+  }
+}
+
+.AeroWindowBar {
+  width: 100%;
+  height: 38px;
+  background: linear-gradient(180deg, #3a6ea5 0%, #5db0ff 60%, #b2e0ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: 0 2px 8px 0 rgba(0, 64, 128, 0.10);
+  padding: 0 1.2rem 0 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid #1976d2;
+  user-select: none;
+}
+
+.AeroWindowTitle {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 2px #1976d2, 0 0px 8px #b2e0ff;
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+}
+
+.AeroWindowButtons {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.aero-btn {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid #fff;
+  border-radius: 3px;
+  margin-left: 0.2rem;
+  background: linear-gradient(180deg, #e0f7fa 0%, #b2e0ff 100%);
+  box-shadow: 0 1px 2px #1976d2, 0 0px 4px #b2e0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.aero-btn.min::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 2px;
+  background: #1976d2;
+  position: absolute;
+  top: 12px;
+  left: 3.5px;
+  border-radius: 1px;
+}
+
+.aero-btn.max::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 8px;
+  border: 2px solid #1976d2;
+  position: absolute;
+  top: 4px;
+  left: 2.5px;
+  border-radius: 1px;
+}
+
+.aero-btn.close {
+  background: linear-gradient(180deg, #ff5c5c 0%, #e57373 100%);
+  border-color: #fff;
+}
+
+.aero-btn.close::before {
+  content: '';
+  position: absolute;
+  left: 4.5px;
+  top: 4.5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 1px;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.aero-btn.close::after {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 4.5px;
+  width: 1.5px;
+  height: 8px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.aero-btn.close::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 4.5px;
+  width: 1.5px;
+  height: 8px;
+  background: #fff;
+  transform: rotate(-45deg);
+}
+
+.aero-btn:hover {
+  background: linear-gradient(180deg, #b2e0ff 0%, #e0f7fa 100%);
+  box-shadow: 0 2px 8px #1976d2;
+}
+
+.aero-btn.close:hover {
+  background: linear-gradient(180deg, #e57373 0%, #ff5c5c 100%);
+}
+
+@media (max-width: 600px) {
+  .AeroWindowBar {
+    padding: 0 0.5rem;
+    height: 32px;
+  }
+  .AeroWindowTitle {
+    font-size: 0.95rem;
+  }
+  .aero-btn {
+    width: 14px;
+    height: 14px;
+  }
+}
