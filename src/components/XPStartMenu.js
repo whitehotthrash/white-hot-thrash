@@ -145,7 +145,7 @@ const XPStartMenu = ({ onClose }) => (
       <Header>
         <ImgTextSpan>
           <img
-            src="/assets/drawn_face.jpg"
+            src={`${process.env.PUBLIC_URL}/assets/drawn_face.jpg`}
             alt="User"
             style={{
               width: 32,
@@ -162,8 +162,8 @@ const XPStartMenu = ({ onClose }) => (
       </Header>
       <Content>
         <Left>
-          <Item href="/assets/resume.pdf" download>
-            <img src="/assets/notepad.png" alt="Resume Icon" />
+          <Item href={`${process.env.PUBLIC_URL}/assets/Tim-Maastricht-CV-2025.pdf`} download>
+            <img src={`${process.env.PUBLIC_URL}/assets/notepad.png`} alt="Resume Icon" />
             <div style={{ display: "flex", flexDirection: "column" }}>
               <h5>Resume</h5>
               <p>Click to download</p>

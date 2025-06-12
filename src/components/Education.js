@@ -34,7 +34,7 @@ const Education = () => (
   <Section data-aos="fade-up" data-aos-delay="200">
     <Title>Education</Title>
     <List>
-      <Item><strong>Coder Academy</strong> – Full-Stack Student (2025 - Present)</Item>
+      <Item><strong>Coder Academy</strong> – Full-Stack Development Diploma (2025 - Present)</Item>
       <Item><strong>TAFE QLD</strong> – Cybersecurity Cert IV (2019)</Item>
       <Item><strong>TAFE QLD</strong> – Information Technology Cert III (2018)</Item>
     </List>
