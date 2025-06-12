@@ -29,9 +29,9 @@ const Contact = () => (
         rel="noopener noreferrer"
         style={{ color: "#245edb" }}
       >
-        LinkedIn
+        LinkedIn,
       </a>{" "}
-      or check out my work on{" "}
+      check out my work on{" "}
       <a
         href="https://github.com/whitehotthrash"
         target="_blank"
@@ -40,7 +40,8 @@ const Contact = () => (
       >
         GitHub
       </a>
-      .
+      ,{" "}
+      or email me at <a href="mailto:tim.maastricht@proton.me" style={{ color: "#245edb" }}>tim.maastricht@proton.me</a>
     </p>
   </Section>
 );

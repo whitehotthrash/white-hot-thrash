@@ -16,7 +16,7 @@ function App() {
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <AeroWindowBar />
       <Header />
-      <main style={{ flex: 1, padding: '2rem 1rem 1rem 1rem', maxWidth: 700, margin: '0 auto' }}>
+      <main style={{ flex: 1, padding: '2rem 1rem 3rem 1rem', maxWidth: 700, margin: '0 auto' }}>
         <About />
         <Experience />
         <Education />
